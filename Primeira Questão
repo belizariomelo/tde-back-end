@@ -1,17 +1,17 @@
 <?php
-// Lendo os valores de entrada
+
 fscanf(STDIN, "%d %d", $N, $H);
 $alturas = array_map('intval', explode(" ", trim(fgets(STDIN))));
 
 $contador = 0;
 
-// Verificando quantos brinquedos Carlitos pode aproveitar
+
 foreach ($alturas as $altura_minima) {
     if ($H >= $altura_minima) {
         $contador++;
     }
 }
 
-// Exibindo o resultado
+
 echo $contador . PHP_EOL;
 ?>
