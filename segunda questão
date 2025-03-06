@@ -1,0 +1,10 @@
+<?php
+
+fscanf(STDIN, "%d", $C);
+fscanf(STDIN, "%d", $A);
+
+
+$viagens = ceil($A / ($C - 1));
+
+echo $viagens . PHP_EOL;
+?>
